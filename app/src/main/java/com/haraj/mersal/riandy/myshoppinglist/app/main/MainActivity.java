@@ -18,6 +18,10 @@ import android.widget.TextView;
 import com.hannesdorfmann.mosby.mvp.MvpActivity;
 import com.haraj.mersal.riandy.myshoppinglist.R;
 import com.haraj.mersal.riandy.myshoppinglist.app.item.ItemActivity;
+import com.haraj.mersal.riandy.myshoppinglist.asset.adapter.ActiveItemListAdapter;
+import com.haraj.mersal.riandy.myshoppinglist.asset.adapter.InactiveItemListAdapter;
+import com.haraj.mersal.riandy.myshoppinglist.asset.adapter.listener.ItemActionListener;
+import com.haraj.mersal.riandy.myshoppinglist.asset.adapter.listener.ItemCheckedChangeListener;
 import com.haraj.mersal.riandy.myshoppinglist.asset.model.ShoppingItem;
 import com.haraj.mersal.riandy.myshoppinglist.asset.viewholder.ActiveItemViewHolder;
 import com.haraj.mersal.riandy.myshoppinglist.asset.viewholder.InactiveItemViewHolder;
@@ -55,82 +59,32 @@ public class MainActivity extends MvpActivity<MainView, MainPresenter> implement
         activeItemList.setLayoutManager(new LinearLayoutManager(this));
         inactiveItemList.setLayoutManager(new LinearLayoutManager(this));
 
-        activeItemList.setAdapter(new RecyclerView.Adapter() {
-            @Override
-            public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-                View v = getLayoutInflater().inflate(R.layout.active_item, parent, false);
-                return new ActiveItemViewHolder(v,
-                        (CheckBox) v.findViewById(R.id.item_status),
-                        (TextView) v.findViewById(R.id.item_name),
-                        (ImageView) v.findViewById(R.id.item_action),
-                        (TextView) v.findViewById(R.id.item_quantity));
-            }
-
-            @Override
-            public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-
-                final ShoppingItem currentItem = activeItemDataSet.get(position);
-                ActiveItemViewHolder currentHolder = (ActiveItemViewHolder) holder;
-
-                currentHolder.itemName.setText(currentItem.getName());
-                currentHolder.itemQuantity.setText(currentItem.getQuantity());
-
-                currentHolder.itemStatus.setChecked(false);
-                currentHolder.itemStatus.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        activeItemList.setAdapter(new ActiveItemListAdapter(getLayoutInflater(), activeItemDataSet,
+                new ItemActionListener() {
                     @Override
-                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                    public void onClick(ShoppingItem shoppingItem) {
 
-                        if(isChecked)
-                            getPresenter().markComplete(currentItem);
+                        getPresenter().openEditForm(shoppingItem);
                     }
-                });
-                currentHolder.itemAction.setOnClickListener(new View.OnClickListener() {
+                },
+                new ItemCheckedChangeListener() {
                     @Override
-                    public void onClick(View v) {
+                    public void onCheckedChanged(ShoppingItem shoppingItem) {
 
-                        getPresenter().openEditForm(currentItem);
+                        getPresenter().markComplete(shoppingItem);
                     }
-                });
-            }
+                })
+        );
 
-            @Override
-            public int getItemCount() {
-                return activeItemDataSet.size();
-            }
-        });
-        inactiveItemList.setAdapter(new RecyclerView.Adapter() {
-            @Override
-            public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-                View v = getLayoutInflater().inflate(R.layout.inactive_item, parent, false);
-
-                return new InactiveItemViewHolder(v,
-                        (CheckBox) v.findViewById(R.id.item_status),
-                        (TextView) v.findViewById(R.id.item_name),
-                        (ImageView) v.findViewById(R.id.item_action));
-            }
-
-            @Override
-            public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-
-                final ShoppingItem currentItem = inactiveItemDataSet.get(position);
-                InactiveItemViewHolder currentViewHolder = (InactiveItemViewHolder) holder;
-
-                currentViewHolder.itemName.setText(currentItem.getName());
-                currentViewHolder.itemName.setPaintFlags(currentViewHolder.itemName.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-                currentViewHolder.itemAction.setOnClickListener(new View.OnClickListener() {
+        inactiveItemList.setAdapter(new InactiveItemListAdapter(getLayoutInflater(), inactiveItemDataSet,
+                new ItemActionListener() {
                     @Override
-                    public void onClick(View v) {
+                    public void onClick(ShoppingItem shoppingItem) {
 
-                        getPresenter().undoComplete(currentItem);
+                        getPresenter().undoComplete(shoppingItem);
                     }
-                });
-            }
-
-            @Override
-            public int getItemCount() {
-                return inactiveItemDataSet.size();
-            }
-        });
+                })
+        );
 
         getPresenter().loadShoppingList();
     }

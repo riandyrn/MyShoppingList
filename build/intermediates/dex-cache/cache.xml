@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/riandyrn/.gradle/caches/modules-2/files-2.1/io.realm/realm-android/0.87.5/ab4e1fead1380252dad0e95658e53ea0c113e89c/realm-android-0.87.5.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ab4e1fead1380252dad0e95658e53ea0c113e89c">
+        <dex dex="/Users/riandyrn/AndroidStudioProjects/MyShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/realm-android-0.87.5_1551dc7fdf98341b929d2a791469fa78975a8247/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riandyrn/AndroidStudioProjects/MyShoppingList/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="/Users/riandyrn/AndroidStudioProjects/MyShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.4.0_19d61e1e8bffd644533cf3b4477d7f61927c0417/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riandyrn/AndroidStudioProjects/MyShoppingList/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/riandyrn/AndroidStudioProjects/MyShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.4.0_7cb7843b2c3126f1fb70ee02846e606dec12e642/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riandyrn/AndroidStudioProjects/MyShoppingList/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/riandyrn/AndroidStudioProjects/MyShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_5c74920023931af2c7b583b262246ef97f044d9c/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riandyrn/AndroidStudioProjects/MyShoppingList/app/build/intermediates/exploded-aar/com.hannesdorfmann.mosby/mvp/2.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8d5f68a8fdd8283ea42b20259ae4adad9cbe5e94">
+        <dex dex="/Users/riandyrn/AndroidStudioProjects/MyShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.hannesdorfmann.mosby-mvp-2.0.1_367a6021bf7047d7913a6439acaf14f8cc1e9189/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riandyrn/AndroidStudioProjects/MyShoppingList/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="181ec14ad71bfb3cdcadf5a19df9ebfb1121e69f">
+        <dex dex="/Users/riandyrn/AndroidStudioProjects/MyShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_3d7d822f8b3e8cd332287213a6b044765a6b3346/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riandyrn/AndroidStudioProjects/MyShoppingList/app/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.1.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d4ab8678882571a0a6f19c47a826ecbce5b4f42b">
+        <dex dex="/Users/riandyrn/AndroidStudioProjects/MyShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.jakewharton-butterknife-8.1.0_d6f578b9d0cf53f96a7ed82878e1f1ec3c53f4a5/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riandyrn/AndroidStudioProjects/MyShoppingList/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="98110f12fba329294dde8f5cc8fe6ef644609779">
+        <dex dex="/Users/riandyrn/AndroidStudioProjects/MyShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d4f0b59d8d52b73c4a2b8d178cd1746f53ca2184/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riandyrn/AndroidStudioProjects/MyShoppingList/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/riandyrn/AndroidStudioProjects/MyShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.4.0_2355cbce9df0364cf0d81b2e1adedfb0372a1f38/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riandyrn/AndroidStudioProjects/MyShoppingList/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/riandyrn/AndroidStudioProjects/MyShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_e481e911a59d03152b5995af2a3258e86423c644/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riandyrn/.gradle/caches/modules-2/files-2.1/com.hannesdorfmann.mosby/mvp-common/2.0.1/d75c9c5577143f3cf3fd63f61526a551f910b56f/mvp-common-2.0.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d75c9c5577143f3cf3fd63f61526a551f910b56f">
+        <dex dex="/Users/riandyrn/AndroidStudioProjects/MyShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/mvp-common-2.0.1_0a9de5270dc27178330a462becc53a9c33f40bf3/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riandyrn/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.1.0/d6854f42bfb4098d3d2358d93201307b9f1cc95d/butterknife-annotations-8.1.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d6854f42bfb4098d3d2358d93201307b9f1cc95d">
+        <dex dex="/Users/riandyrn/AndroidStudioProjects/MyShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/butterknife-annotations-8.1.0_a6cc9ef48aa0c83f6a8d4ea8fea999936da2da40/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riandyrn/AndroidStudioProjects/MyShoppingList/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/Users/riandyrn/AndroidStudioProjects/MyShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.4.0_8681371e1a54842f0750c3b5b2580e5b56e6311c/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riandyrn/AndroidStudioProjects/MyShoppingList/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/riandyrn/AndroidStudioProjects/MyShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.4.0_39b4f131736f0ee8573f272594d3a59a627e7dbf/classes.dex" />
+    </item>
+    <item
+        jar="/Users/riandyrn/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/riandyrn/AndroidStudioProjects/MyShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_356803c0d8bd94a4f49248b5e5b924ab46801bea/classes.dex" />
+    </item>
+
+</items>
